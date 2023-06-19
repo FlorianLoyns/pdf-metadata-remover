@@ -34,4 +34,7 @@ do
   rm "${file%.*}_temp.pdf"
 
   echo "Bearbeitung abgeschlossen für: $file"
+
+  # Lösche die ursprüngliche Datei
+  rm "$file"
 done
